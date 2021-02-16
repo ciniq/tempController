@@ -1,5 +1,5 @@
 import glob
-import classes/AllSensors
+import classes.AllSensors
 
 sensors = AllSensors(glob.glob('/sys/bus/w1/devices/28*'))
 
