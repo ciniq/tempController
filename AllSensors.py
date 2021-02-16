@@ -1,15 +1,15 @@
 import os
-from Classes.Sensor import Sensor
+import Sensor
 
 os.system('modprobe w1-gpio')
 os.system('modprobe w1-therm')
-class AllSensors:
+class allsensors:
   def __init__(self, locations):
       self.locations = locations
 
   def getAllData(self):
       values = [];
       for location in self.locations :
-          sensor = Sensor(location)
-          values.append(sensor.get_value())
+          sen = new Sensor(location)
+          values.append(sen.get_value())
       return values

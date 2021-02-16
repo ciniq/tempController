@@ -1,7 +1,7 @@
 import glob
-from Classes.AllSensors import AllSensors
+import allsensors
 
-sensors = AllSensors(glob.glob('/sys/bus/w1/devices/28*'))
+sensors = allsensors(glob.glob('/sys/bus/w1/devices/28*'))
 
 while True:
     print(sensors.getAllData())
