@@ -1,5 +1,5 @@
 import os
-import classes.Sensor
+from classes.Sensor import Sensor
 
 os.system('modprobe w1-gpio')
 os.system('modprobe w1-therm')
