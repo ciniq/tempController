@@ -11,7 +11,7 @@ relais_2 = False
 GPIO.setup(RELAIS_1_GPIO, GPIO.OUT) # GPIO Assign mode
 GPIO.setup(RELAIS_1_GPIO, GPIO.OUT) # GPIO Assign mode
 while True :
-    
+    sleep(1)
     if (relais_1 == True) :
         relais_1 = False
         GPIO.output(RELAIS_1_GPIO, GPIO.LOW) # out
